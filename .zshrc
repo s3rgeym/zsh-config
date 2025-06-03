@@ -10,7 +10,7 @@ path=(
   "$HOME/.local/bin"
   "$GOPATH/bin"
   "$HOME/.cargo/bin"
-  "$PYENV_ROOT/bin"
+  #"$PYENV_ROOT/bin"
   $path
 )
 
