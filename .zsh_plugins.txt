@@ -1,0 +1,45 @@
+sindresorhus/pure   # enhance your prompt
+
+# you can even use Oh My Zsh plugins
+getantidote/use-omz
+ohmyzsh/ohmyzsh path:lib
+
+# Наиболее полезные плагины oh my zsh
+ohmyzsh/ohmyzsh path:plugins/command-not-found
+# Копировать текст в командной строке по Ctrl-O
+ohmyzsh/ohmyzsh path:plugins/copybuffer
+# eval $(direnv hook zsh)
+ohmyzsh/ohmyzsh path:plugins/direnv
+ohmyzsh/ohmyzsh path:plugins/extract
+# Заменяем ls на exa
+# sudo pacman -S eza
+ohmyzsh/ohmyzsh path:plugins/eza
+# Переопределяет сочетания Ctrl-R, Ctrl-T
+# sudo pacman -S fzf
+ohmyzsh/ohmyzsh path:plugins/fzf
+ohmyzsh/ohmyzsh path:plugins/git
+# Дополнение хостов для ssh
+#ohmyzsh/ohmyzsh path:plugins/ssh
+# systemctl --user enable --now ssh-agent
+#ohmyzsh/ohmyzsh path:plugins/ssh-agent
+# Два раза <Esc> подставляет к текущей или предыдущей команде sudo
+ohmyzsh/ohmyzsh path:plugins/sudo
+# Не работает
+#ohmyzsh/ohmyzsh path:plugins/pyenv
+# sudo pacman -S zoxide
+#ohmyzsh/ohmyzsh path:plugins/zoxide
+
+# Подсветка синтаксиса
+zdharma-continuum/fast-syntax-highlighting
+
+# Более удобная подстановка команд и их аргументов
+# fzf-tab needs to be loaded after compinit, but before plugins which will wrap widgets, such as zsh-autosuggestions or fast-syntax-highlighting
+Aloxaf/fzf-tab
+
+zsh-users/zsh-autosuggestions
+# Поиск по истории с клавишей Up
+zsh-users/zsh-history-substring-search
+
+# Подсказывает алиасы для команд
+MichaelAquilina/zsh-you-should-use
+
