@@ -1,5 +1,7 @@
 # fish всем хорош кроме багов и синтаксиса, который не имеет обратной
 # совместимости с Bash
+# $XDG_CACHE_HOME
+export ZDOTDIR="${ZDOTDIR:-$HOME/.config/zsh}"
 
 # Пути и переменные окружения
 export GOPATH="${GOPATH:-$HOME/go}"
@@ -25,7 +27,7 @@ fpath+=(
 # Отображение иконок в ls
 zstyle ':omz:plugins:eza' 'icons' yes
 
-# Не помню что это
+# You can set Pure to only git fetch the upstream branch of the current local branch.
 zstyle :prompt:pure:git:fetch only_upstream yes
 
 # Не отображаем встроенное меню автодополнения, так как используем fzf-tab
