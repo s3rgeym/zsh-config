@@ -60,12 +60,14 @@ bindkey "$terminfo[kcud1]" history-substring-search-down
 # Автозагрузка конфигов
 # mkdir -p "$ZDOTDIR/zshrc.d"
 # конфигам лучше добавлять числовые префиксы, чтобы управлять порядком их загрузки
-# touch $ZDOTDIR/.zshrc.d/00-core.zsh
+# touch $ZDOTDIR/zshrc.d/00-core.zsh
 # echo "alias zshrc='$EDITOR $ZDOTDIR/.zshrc'" >> "$ZDOTDIR/zshrc.d/editor.sh"
 # echo 'alias vimrc="vim $MYVIMRC"' >> "$ZDOTDIR/zshrc.d/aliases.sh"
 if [[ -d $ZDOTDIR/zshrc.d ]]; then
+  # игнорируем дот-файлы
   for config ($ZDOTDIR/zshrc.d/[^.]*(N)); do
-    . $config
+    #echo $config
+    . "$config"
   done
 fi
 
