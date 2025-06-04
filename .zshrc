@@ -1,6 +1,6 @@
 # fish всем хорош кроме багов и синтаксиса, который не имеет обратной
 # совместимости с Bash
-# $XDG_CACHE_HOME
+# $XDG_CONFIG_HOME
 export ZDOTDIR="${ZDOTDIR:-$HOME/.config/zsh}"
 
 # Пути и переменные окружения
