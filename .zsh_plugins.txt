@@ -1,5 +1,3 @@
-sindresorhus/pure   # enhance your prompt
-
 # you can even use Oh My Zsh plugins
 getantidote/use-omz
 ohmyzsh/ohmyzsh path:lib
@@ -43,3 +41,6 @@ zsh-users/zsh-history-substring-search
 # Подсказывает алиасы для команд
 MichaelAquilina/zsh-you-should-use
 
+# Подключение темы
+#sindresorhus/pure
+ohmyzsh/ohmyzsh path:themes/refined.zsh-theme

@@ -30,14 +30,17 @@ zstyle ':omz:plugins:eza' 'icons' yes
 # You can set Pure to only git fetch the upstream branch of the current local branch.
 zstyle :prompt:pure:git:fetch only_upstream yes
 
-# Не отображаем встроенное меню автодополнения, так как используем fzf-tab
-zstyle ':completion:*' menu no
+# https://github.com/Aloxaf/fzf-tab/wiki/Configuration
+# zstyle ':fzf-tab:*' fzf-bindings 'space:accept'
+# zstyle ':fzf-tab:*' accept-line enter
 
-# git clone --depth=1 https://github.com/mattmc3/antidote.git ${ZDOTDIR:-$HOME}/.antidote
-# Обновление всех плагинов:
-# antidote update
+antidote_dir="${ZDOTDIR}/.antidote"
+if [[ ! -d $antidote_dir ]]; then
+  git clone --depth=1 https://github.com/mattmc3/antidote.git "$antidote_dir"
+fi
 
-source ${ZDOTDIR:-$HOME}/.antidote/antidote.zsh
+# Обновление всех плагинов: `antidote update`
+source "${antidote_dir}/antidote.zsh"
 antidote load
 
 # Настройки самого zsh
